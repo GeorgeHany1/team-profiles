@@ -2,102 +2,182 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SpotLight Camp</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>F.I.S.T - Fit In Sports Team</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Bungee+Shade&display=swap" rel="stylesheet" />
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(135deg,
+        #E74C3C 0%,
+        #F39C12 33%,
+        #27AE60 66%,
+        #3498DB 100%
+      );
       padding: 20px;
       color: #333;
     }
+
     .card {
-      background: #fff;
-      border-radius: 16px;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-      max-width: 500px;
+      background: rgba(255, 255, 255, 0.96);
+      border-radius: 20px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+      max-width: 520px;
       margin: auto;
-      padding: 30px 20px;
+      padding: 40px 25px;
       text-align: center;
     }
+
     .banner {
-      width: 100%;
-      max-width: 200px;
-      margin: 0 auto 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      width: 220px;
+      height: auto;
+      margin: 0 auto 25px;
+      border-radius: 14px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
     }
+
     h1 {
-      font-size: 28px;
-      margin-bottom: 5px;
-      color: #00008b;
+      font-size: 32px;
+      margin-bottom: 10px;
+      font-family: 'Bungee Shade', cursive;
+      background: linear-gradient(135deg, #000000, #000000);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     }
-    p {
-      font-size: 16px;
+
+    .meta {
+      font-size: 20px;
+      font-weight: 700;
+      font-family: 'Quicksand', sans-serif;
+      color: #222;
+      text-shadow: 1px 1px 0 #F39C12;
       margin: 6px 0;
+      letter-spacing: 0.5px;
     }
+
+    .meta strong {
+      color: #E74C3C;
+      font-weight: 800;
+    }
+
     .section {
-      margin-top: 25px;
+      margin-top: 30px;
       text-align: left;
     }
+
     .section h3 {
       font-size: 18px;
-      margin-bottom: 10px;
-      color: #2e294e;
+      margin-bottom: 12px;
+      color: #444;
     }
-    ul {
+
+    .chip-list {
       list-style: none;
       padding-left: 0;
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
     }
-    ul li {
-      background: #ffd166;
-      padding: 10px 14px;
-      border-radius: 10px;
-      font-size: 14px;
+
+    .chip-list li {
+      background: linear-gradient(135deg, #3498DB, #27AE60, #F39C12, #E74C3C);
+      padding: 10px 16px;
+      border-radius: 30px;
+      font-size: 18px;
+      font-weight: 800;
+      color: #000000;
       flex: 1 1 45%;
       text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      transition: transform 0.2s ease-in-out;
     }
+
+    .chip-list li:hover {
+      transform: scale(1.05);
+      cursor: default;
+    }
+
+    .leader-card {
+      background: linear-gradient(135deg, #E74C3C, #F39C12, #27AE60, #3498DB);
+      border-radius: 14px;
+      padding: 16px 20px;
+      font-weight: bold;
+      text-align: center;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+      color: #000000;
+      font-size: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
     .social {
-      margin-top: 25px;
+      margin-top: 30px;
+      text-align: center;
     }
+
     .social a {
-      display: inline-block;
       text-decoration: none;
-      color: #e1306c;
-      font-size: 24px;
+      display: inline-block;
+      color: #fff;
+      background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+      font-size: 16px;
+      padding: 12px 28px;
+      border-radius: 40px;
+      font-weight: 600;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+      transition: transform 0.2s ease-in-out;
     }
+
     .social a:hover {
-      opacity: 0.8;
+      transform: scale(1.06);
     }
+
     @media (max-width: 600px) {
-      ul li {
-        flex: 1 1 100%;
-      }
       h1 {
         font-size: 24px;
       }
+
       .section h3 {
         font-size: 16px;
+      }
+
+      .chip-list li {
+        flex: 1 1 100%;
+      }
+
+      .social a {
+        font-size: 14px;
+        padding: 10px 20px;
+      }
+
+      .meta {
+        font-size: 18px;
       }
     }
   </style>
 </head>
 <body>
   <div class="card">
-    <img src="camp_banner.jpg" alt="Camp Banner" class="banner" />
+    <img src="camp_banner.jpg" alt="FIST Team Logo" class="banner" />
     <h1>Mark Ehab</h1>
-    <p><strong>Team:</strong> Sol 2</p>
-    <p><strong>Room:</strong> 101</p>
+
+    <p class="meta">🏅 <strong>Team:</strong> Sol 2</p>
+    <p class="meta">🏠 <strong>Room:</strong> 101</p>
+
+    <div class="section">
+      <h3>👑 Team Leader</h3>
+      <div class="leader-card">🎉 Clara 🎯</div>
+    </div>
 
     <div class="section">
       <h3>🎪 Teammates</h3>
-      <ul>
-        
-          <li>Mark Ehab (Me)</li>
+      <ul class="chip-list">
         
           <li>Martina</li>
         
@@ -106,9 +186,7 @@
 
     <div class="section">
       <h3>🛏️ Roommates</h3>
-      <ul>
-        
-          <li>Mark Ehab (Me)</li>
+      <ul class="chip-list">
         
           <li>George Hany</li>
         
@@ -119,9 +197,7 @@
 
     
     <div class="social">
-      <a href="https://www.instagram.com/fitin_sportsteam?igsh=aW1oNXBybHl1Nzli" target="_blank" title="Instagram Profile">
-        📸 Follow us on Instagram
-      </a>
+      <a href="https://www.instagram.com/fitin_sportsteam?igsh=aW1oNXBybHl1Nzli" target="_blank">📸 Follow on Instagram</a>
     </div>
     
   </div>
