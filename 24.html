@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>F.I.S.T - Fit In Sports Team</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Bungee+Shade&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet" />
+  
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(to right, #ff0000 0%, #0011ff 100%);
+      padding: 20px;
+      color: #333;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.96);
+      border-radius: 20px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+      max-width: 520px;
+      margin: auto;
+      padding: 40px 25px;
+      text-align: center;
+    }
+
+    .banner {
+      width: 200px;
+      height: auto;
+      margin: 0 auto 25px;
+      border-radius: 14px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+    }
+
+    h1 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 55px;
+      margin-bottom: 10px;
+      background: linear-gradient(135deg, #000000, #000000);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .meta {
+      font-size: 16px;
+      font-weight: 700;
+      color: #222;
+      text-shadow: 1px 1px 0 #000000;
+      margin: 6px 0;
+      letter-spacing: 0.5px;
+    }
+
+    .meta strong {
+      color: #000000;
+      font-weight: 800;
+    }
+
+    .section {
+      margin-top: 30px;
+      text-align: left;
+    }
+
+    .section h3 {
+      font-size: 20px;
+      font-family: 'Quicksand', sans-serif;
+      margin-bottom: 12px;
+      color: #444;
+    }
+
+    .chip-list {
+      list-style: none;
+      padding-left: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .chip-list li {
+      background: linear-gradient(335deg, #0011ff, #ff0000);
+      padding: 10px 16px;
+      border-radius: 30px;
+      font-size: 12px;
+      font-weight: 800;
+      color: #ffffff;
+      flex: 1 1 45%;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .chip-list li:hover {
+      transform: scale(1.05);
+      cursor: default;
+    }
+
+    .leader-card {
+      background: linear-gradient(500deg, #0011ff, #ff0000);
+      border-radius: 14px;
+      padding: 16px 20px;
+      font-weight: bold;
+      text-align: center;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+      color: #ffffff;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .god-title {
+      font-size: 28px;
+      font-family: 'Dancing Script', cursive;
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 10px;
+      background: linear-gradient(90deg, #000000, #000000);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .friends-title {
+      font-size: 26px;
+      font-family: 'Dancing Script', cursive;
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 10px;
+      background: linear-gradient(90deg, #000000, #000000);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .social {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .social a {
+      text-decoration: none;
+      display: inline-block;
+      color: #fff;
+      background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+      font-size: 20px;
+      padding: 12px 28px;
+      border-radius: 40px;
+      font-weight: 600;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .social a:hover {
+      transform: scale(1.06);
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 42px;
+      }
+      .section h3 {
+        font-size: 18px;
+      }
+      .chip-list li {
+        flex: 1 1 100%;
+      }
+      .social a {
+        font-size: 14px;
+        padding: 10px 20px;
+      }
+      .meta {
+        font-size: 18px;
+      }
+      .god-title {
+        font-size: 22px;
+      }
+      .friends-title {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="camp_banner.jpg" alt="FIST Team Logo" class="banner" />
+    <h1>Gloria Barsoum Isaac</h1>
+
+    <p class="meta">🏅 <strong>Team:</strong> Luna 2</p>
+    <p class="meta">🏠 <strong>Room:</strong> 432</p>
+
+       <!-- Friends Title -->
+    <div class="friends-title"> 🏆 Bonding Time</div>
+
+    <div class="section">
+      <h3>👑 Team Leaders</h3>
+      <ul class="chip-list leaders">
+        
+          <li>Sherry Micheal</li>
+        
+          <li>Marotia Essam</li>
+        
+      </ul>
+    </div>
+
+
+        <div class="section">
+      <h3>🎪 Teammates Luna 2</h3>
+      <ul class="chip-list">
+        
+          <li>Mark Mina Younan </li>
+        
+          <li>Peter Remon Raouf </li>
+        
+          <li>Peter Sherif Aziz </li>
+        
+          <li>Youssef Samy </li>
+        
+          <li>George Bahaa Rushdy </li>
+        
+          <li>Anthony Medhat Edward</li>
+        
+          <li>Martin Mourad Maher</li>
+        
+          <li>Rony Gamal Morris </li>
+        
+          <li>Mireille Sameh Mukhtar </li>
+        
+          <li>Marise Hany Mounir</li>
+        
+          <li>Joy Hany Amin</li>
+        
+          <li>Sarah Osama Morris </li>
+        
+          <li>Karma Samer Samir</li>
+        
+          <li>Maria Maged Ibrahim</li>
+        
+      </ul>
+    </div>
+    <div class="section">
+      <h3>🛏️ Roommates 432</h3>
+      <ul class="chip-list">
+        
+          <li>Youstina Raouf George</li>
+        
+          <li>Christine Osama Laban</li>
+        
+      </ul>
+    </div>
+        <!-- God's Time Title -->
+    <div class="god-title"> Spiritual ≪✞≫ Time</div>
+    
+    
+
+    <!-- Facilitators -->
+    <div class="section">
+      <h3>🎤 Facilitators</h3>
+      <ul class="chip-list leaders">
+        
+          <li>Marotia</li>
+        
+          <li>Maria Atef</li>
+        
+      </ul>
+    </div>
+
+
+    <!-- Facilitation Group Members -->
+    <div class="section">
+      <h3>🙏 Facilitation Group 9 </h3> 
+      <h3>🤝 Members </h3>
+      <ul class="chip-list">
+        
+          <li>Youstina Raouf George</li>
+        
+          <li>Christine Osama Laban</li>
+        
+          <li>Karen Hanna Habashi </li>
+        
+          <li>Joy George William</li>
+        
+          <li>Julie Karam Beshay </li>
+        
+          <li>Julia Magdy Aziz</li>
+        
+          <li>Sandy Nagui Tadros</li>
+        
+          <li>Mariia Mourad Girgis</li>
+        
+          <li>Cevin Karam Fawzi</li>
+        
+      </ul>
+    </div>
+
+ 
+
+
+
+    
+    <div class="social">
+      <a href="https://www.instagram.com/fitin_sportsteam?igsh=aW1oNXBybHl1Nzli" target="_blank">📸 Follow on Instagram</a>
+    </div>
+    
+  </div>
+</body>
+</html>
